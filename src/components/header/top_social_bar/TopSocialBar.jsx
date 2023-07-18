@@ -1,7 +1,7 @@
 export const TopSocialBar = () => {
     return (
         <>
-        <h1>top</h1>
+        <h1>topSocialBar</h1>
         </>
     )
 }

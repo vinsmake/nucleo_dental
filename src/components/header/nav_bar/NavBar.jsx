@@ -1,7 +1,7 @@
 export const NavBar = () => {
     return (
         <>
-        <h1>Nav</h1>
+        <h1>NavBar</h1>
         </>
     )
 }
