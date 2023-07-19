@@ -1,0 +1,37 @@
+*{
+    border: 1px solid #ff0000;
+}
+
+.topSocialBar {
+
+}
+
+.topSocialBar__bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topSocialBar__bar__contactList {
+    display: flex;
+    gap: 1rem;
+}
+
+.topSocialBar__bar__contactList--item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.topSocialBar__bar__contactList--icon {
+    height: 1rem;
+    width: auto;
+
+}
+
+
+
+.topSocialBar__bar__socialList {
+    display: flex;
+    gap: 1rem;
+}

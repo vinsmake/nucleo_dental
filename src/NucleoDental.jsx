@@ -1,3 +1,4 @@
+import "./normalize.css"
 import { Header } from "./components/header/header"
 
 
