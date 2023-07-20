@@ -1,7 +1,7 @@
 export const Whatsapp = ({className}) => {
     return (
         <>
-            <svg className={className} fill="#527dfe" height="256px" width="256px" version="1.1" id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24.00 24.00" enable-background="new 0 0 24 24" xml: space="preserve" stroke="#527dfe" stroke-width="0.00024000000000000003">
+            <svg className={className} fill="" height="256px" width="256px" version="1.1" id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24.00 24.00" enable-background="new 0 0 24 24" xml: space="preserve" stroke="" stroke-width="0.00024000000000000003">
 
                 <g id="SVGRepo_bgCarrier" stroke-width="0" />
 

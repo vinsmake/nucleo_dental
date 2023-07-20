@@ -3,12 +3,14 @@
 }
 
 .topSocialBar {
-
+    background-color: var(--background);
 }
 
 .topSocialBar__bar {
     display: flex;
     justify-content: space-between;
+    width: 70%;
+    margin: auto;
 }
 
 .topSocialBar__bar__contactList {
@@ -20,12 +22,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
 
+}
+.topSocialBar__bar__contactList--item a {
+    color: var(--white);
 }
 
 .topSocialBar__bar__contactList--icon {
     height: 1rem;
     width: auto;
+    fill: var(--lapislazuli);
 
 }
 
@@ -34,4 +41,17 @@
 .topSocialBar__bar__socialList {
     display: flex;
     gap: 1rem;
+}
+
+.topSocialBar__bar__socialList--item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topSocialBar__bar__socialList--icon {
+    height: 1rem;
+    width: auto;
+    fill: var(--white);
+    stroke: var(--white);
 }

@@ -1,5 +1,6 @@
 import "./normalize.css"
-import { Header } from "./components/header/header"
+import { Header } from "./components/header/Header";
+import './NucleoDental.css';
 
 
 export const NucleoDental = () => {
