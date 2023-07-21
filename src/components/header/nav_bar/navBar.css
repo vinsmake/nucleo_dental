@@ -1,0 +1,47 @@
+.navBar * {
+    border: 1px solid red;
+}
+
+.navBar {
+
+}
+
+.navBar_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.navBar_bar--logo {
+    color: var(--background);
+    font-family: var(--title);
+    font-size: 2rem;
+}
+
+.navBar_bar__links {
+
+}
+
+.navBar_bar__links__list {
+ display: flex;
+ gap: 1rem;
+}
+
+.navBar_bar__links__list li{
+    list-style: none;
+
+}
+
+.navBar_bar__links__list--link{
+    color: var(--background);
+    transition: var(--transition);
+    font-family: var(--navLink);
+    font-size: 1rem;
+
+}
+
+.navBar_bar__links__list--link:is(:hover,:focus) {
+    color: var(--lapislazuli);
+}

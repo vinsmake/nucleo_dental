@@ -4,7 +4,9 @@
     --background: #0E254E;
 
     /* font-family */
-    --navLink: roboto-regular;
+    --social: roboto-regular;
+    --title: roboto-bold;
+    --navLink: roboto-bold;
 
     /* helpers */
     --transition: 0.25s ease;
@@ -25,6 +27,11 @@
 @font-face {
     font-family: roboto-regular;
     src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(./assets/fonts/Roboto/Roboto-Bold.ttf);
 }
 
 
@@ -51,4 +58,8 @@ body {
 
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
 }

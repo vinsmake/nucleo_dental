@@ -26,8 +26,7 @@
 }
 .topSocialBar__bar__contactList--item a {
     color: var(--white);
-    text-decoration: none;
-    font-family: var(--navLink);
+    font-family: var(--social);
     font-size: 1rem;
     transition: var(--transition);
 }
