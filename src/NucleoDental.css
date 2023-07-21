@@ -2,4 +2,53 @@
     --white: #fff;
     --lapislazuli: #527dfe;
     --background: #0E254E;
+
+    /* font-family */
+    --navLink: roboto-regular;
+
+    /* helpers */
+    --transition: 0.25s ease;
+}
+
+
+/* FONTS */
+@font-face {
+    font-family: lato-bold;
+    src: url(./assets/fonts/Lato/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: lato-regular;
+    src: url(./assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+
+html {
+    font-size: 137.5%; /* 1rem=22px */
+    box-sizing: border-box;
+}
+
+@media (max-width: 920px) {
+    html {
+        font-size: 125%; /* 1rem=20px */
+        }
+}
+
+@media (max-width: 480px) {
+    html {
+    font-size: 112.5%; /* 1rem=18px */
+    }
+}
+
+body {
+    font-size: 1rem;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }

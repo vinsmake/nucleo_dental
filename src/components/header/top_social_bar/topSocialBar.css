@@ -1,6 +1,4 @@
-*{
-    border: 1px solid #ff0000;
-}
+
 
 .topSocialBar {
     background-color: var(--background);
@@ -16,6 +14,7 @@
 .topSocialBar__bar__contactList {
     display: flex;
     gap: 1rem;
+    margin: 1rem 0;
 }
 
 .topSocialBar__bar__contactList--item {
@@ -27,6 +26,14 @@
 }
 .topSocialBar__bar__contactList--item a {
     color: var(--white);
+    text-decoration: none;
+    font-family: var(--navLink);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.topSocialBar__bar__contactList--item a:is(:hover, :focus) {
+    color: var(--lapislazuli);
 }
 
 .topSocialBar__bar__contactList--icon {
@@ -41,6 +48,7 @@
 .topSocialBar__bar__socialList {
     display: flex;
     gap: 1rem;
+    margin: 0.5rem 0;
 }
 
 .topSocialBar__bar__socialList--item {
@@ -54,4 +62,10 @@
     width: auto;
     fill: var(--white);
     stroke: var(--white);
+    transition: var(--transition);
+}
+
+.topSocialBar__bar__socialList--icon:is(:hover, :focus) {
+    fill: var(--lapislazuli);
+    stroke: var(--lapislazuli);
 }
