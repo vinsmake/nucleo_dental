@@ -11,7 +11,7 @@
 
     /* font-family */
     --social: roboto-regular;
-    --title: roboto-bold;
+    --title: poppins-bold;
     --navLink: roboto-bold;
 
     /* helpers */
@@ -23,6 +23,11 @@
 
 
 /* FONTS */
+@font-face {
+    font-family: poppins-bold;
+    src: url(./assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
 @font-face {
     font-family: lato-bold;
     src: url(./assets/fonts/Lato/Lato-Bold.ttf);
@@ -45,19 +50,19 @@
 
 
 html {
-    font-size: 137.5%; /* 1rem=22px */
+    font-size: 125%; /* 1rem=22px */
     box-sizing: border-box;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1280px) {
     html {
-        font-size: 125%; /* 1rem=20px */
+        font-size: 112.5%; /* 1rem=18px */
         }
 }
 
 @media (max-width: 480px) {
     html {
-    font-size: 112.5%; /* 1rem=18px */
+    font-size: 100%; /* 1rem=16px */
     }
 }
 
