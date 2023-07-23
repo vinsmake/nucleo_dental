@@ -15,7 +15,7 @@
     margin: auto;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1366px) {
     .navBar__bar {
         width: 95%;
     }

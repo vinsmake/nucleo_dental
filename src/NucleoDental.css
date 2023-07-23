@@ -50,11 +50,11 @@
 
 
 html {
-    font-size: 125%; /* 1rem=22px */
+    font-size: 125%; /* 1rem=20px */
     box-sizing: border-box;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1366px) {
     html {
         font-size: 112.5%; /* 1rem=18px */
         }
