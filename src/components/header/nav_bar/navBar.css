@@ -1,12 +1,12 @@
-.navBar * {
+/* .navBar * {
     border: 1px solid red;
-}
+} */
 
 .navBar {
 
 }
 
-.navBar_bar {
+.navBar__bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,27 +14,28 @@
     margin: auto;
 }
 
-.navBar_bar--logo {
+.navBar__bar--logo {
     color: var(--background);
     font-family: var(--title);
     font-size: 2rem;
 }
 
-.navBar_bar__links {
+.navBar__bar__links {
+    margin: auto 1rem auto auto;
 
 }
 
-.navBar_bar__links__list {
+.navBar__bar__links__list {
  display: flex;
  gap: 1rem;
 }
 
-.navBar_bar__links__list li{
+.navBar__bar__links__list li{
     list-style: none;
 
 }
 
-.navBar_bar__links__list--link{
+.navBar__bar__links__list--link{
     color: var(--background);
     transition: var(--transition);
     font-family: var(--navLink);
@@ -42,6 +43,20 @@
 
 }
 
-.navBar_bar__links__list--link:is(:hover,:focus) {
+.navBar__bar__links__list--link:is(:hover,:focus) {
     color: var(--lapislazuli);
+}
+
+.navBar__bar--whats {
+    padding: 1rem;
+    background: var(--gradient);
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: var(--social);
+    border-radius: 4px;
+    box-shadow: var(--button);
+}
+
+.navBar__bar--whats:is(:hover, :focus) {
+    background: var(--gradientInv);
 }

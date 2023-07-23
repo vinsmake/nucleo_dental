@@ -2,6 +2,7 @@
 
 .topSocialBar {
     background-color: var(--background);
+    margin: 0 auto 0.5rem auto;
 }
 
 .topSocialBar__bar {
