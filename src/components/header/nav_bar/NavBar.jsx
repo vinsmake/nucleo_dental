@@ -9,24 +9,24 @@ export const NavBar = () => {
     const [navBarActive, setNavBarActive] = useState(false);
 
     useEffect(() => {
-      const handleScroll = () => {
-        if (window.scrollY >= 100) {
-          setNavBarActive(true);
-        } else {
-          setNavBarActive(false);
-        }
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        // Limpia el evento del scroll cuando el componente se desmonte
-        window.removeEventListener('scroll', handleScroll);
-      };
+        const handleScroll = () => {
+            if (window.scrollY >= 100) {
+                setNavBarActive(true);
+            } else {
+                setNavBarActive(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            // Limpia el evento del scroll cuando el componente se desmonte
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
 
     /* burguer toggle */
-    const [Menu, setMenu ] = useState();
+    const [Menu, setMenu] = useState();
     const handleClick = () => {
         setMenu(!Menu);
     }
