@@ -1,0 +1,91 @@
+
+
+.topSocialBar {
+    background-color: var(--background);
+    margin: auto;
+    width: 100%;
+}
+
+.topSocialBar__bar {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.topSocialBar__bar__contactList {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.topSocialBar__bar__contactList--item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+.topSocialBar__bar__contactList--item a {
+    color: var(--white);
+    font-family: var(--social);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.topSocialBar__bar__contactList--item a:is(:hover, :focus) {
+    color: var(--lapislazuli);
+}
+
+.topSocialBar__bar__contactList--icon {
+    height: 1rem;
+    width: auto;
+    fill: var(--lapislazuli);
+
+}
+
+
+
+.topSocialBar__bar__socialList {
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem 0;
+}
+
+.topSocialBar__bar__socialList--item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topSocialBar__bar__socialList--icon {
+    height: 1rem;
+    width: auto;
+    fill: var(--white);
+    stroke: var(--white);
+    transition: var(--transition);
+}
+
+.topSocialBar__bar__socialList--icon:is(:hover, :focus) {
+    fill: var(--lapislazuli);
+    stroke: var(--lapislazuli);
+}
+@media (max-width: 1366px) {
+
+}
+
+@media (max-width: 962px) {
+    .topSocialBar__bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .topSocialBar {
+        display: none;
+    }
+}

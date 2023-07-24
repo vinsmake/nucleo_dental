@@ -1,0 +1,83 @@
+:root{
+
+    --nucleo: #037588;
+
+    --white: #fff;
+    --sky: #1E8CC8;
+    --lapislazuli: #527dfe;
+    --royal: #365ed9;
+    --background: #0E254E;
+
+    --gradient: linear-gradient(90deg, var(--sky) 0%, var(--royal) 100%);
+    --gradientInv: linear-gradient(90deg, var(--royal) 0%, var(--sky) 100%);
+
+
+    /* font-family */
+    --social: roboto-regular;
+    --title: poppins-bold;
+    --navLink: roboto-bold;
+
+    /* helpers */
+    --transition: 0.25s ease;
+
+    /* shadows */
+    --button: 0px 10px 30px #527dfe63;
+    --navBar: 0px 5px 18px -1px #0e254e63;
+}
+
+
+/* FONTS */
+@font-face {
+    font-family: poppins-bold;
+    src: url(./assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: lato-bold;
+    src: url(./assets/fonts/Lato/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: lato-regular;
+    src: url(./assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(./assets/fonts/Roboto/Roboto-Bold.ttf);
+}
+
+
+html {
+    font-size: 125%; /* 1rem=20px */
+    box-sizing: border-box;
+}
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 112.5%; /* 1rem=18px */
+        }
+}
+
+@media (max-width: 480px) {
+    html {
+    font-size: 100%; /* 1rem=16px */
+    }
+}
+
+body {
+    font-size: 1rem;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
