@@ -26,7 +26,10 @@ export const NavBar = () => {
     }, []);
 
     /* burguer toggle */
-
+    const [Menu, setMenu ] = useState();
+    const handleClick = () => {
+        setMenu(!Menu);
+    }
 
 
 
@@ -39,7 +42,7 @@ export const NavBar = () => {
                         Núcleo Dental
                     </a>
 
-                    <div className='navBar__bar__links' id="navBar--links">
+                    <div className={`navBar__bar__links ${Menu ? 'navBar__bar__links--active' : ''}`} id="navBar--links">
                         <ul className='navBar__bar__links__list'>
                             <li>
                                 <a className='navBar__bar__links__list--link' id='navBar--link' href='#inicio'> Inicio </a>
@@ -61,9 +64,9 @@ export const NavBar = () => {
                         Enviar whatsapp
                     </a>
 
-                    <div className='navBar__bar--button' id='navBar--button'>
-                        <MenuOpen className={'navBar__bar--button--icon navBar__bar--button--icon--active'}></MenuOpen>
-                        <MenuClose className={'navBar__bar--button--icon'}></MenuClose>
+                    <div className='navBar__bar--button' id='navBar--button' onClick={handleClick}>
+                        <MenuOpen className={`navBar__bar--button--icon ${Menu ? 'navBar__bar--button--icon--active' : ''}`}></MenuOpen>
+                        <MenuClose className={`navBar__bar--button--icon ${Menu ? '' : 'navBar__bar--button--icon--active'}`}></MenuClose>
                     </div>
 
                 </nav>

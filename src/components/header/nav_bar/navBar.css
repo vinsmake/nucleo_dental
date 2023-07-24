@@ -143,6 +143,11 @@
         right: 50%;
         z-index: 99;
         width: 90%;
+        display: none;
+    }
+
+    .navBar__bar__links--active {
+        display: block;
     }
 
     .navBar__bar__links__list {
