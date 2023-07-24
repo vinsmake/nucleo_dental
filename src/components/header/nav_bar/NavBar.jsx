@@ -1,10 +1,19 @@
 import { MenuClose } from '../../../assets/icons/MenuClose'
 import { MenuOpen } from '../../../assets/icons/MenuOpen'
 import './navBar.css'
-import './menu.js'
-
 
 export const NavBar = () => {
+
+    const navBar = document.querySelector("#navBar");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY >= 100) {
+        navBar.classList.add("navBar--active");
+      } else {
+        navBar.classList.remove("navBar--active");
+      }
+    });
+
     return (
         <>
             <section className='navBar' id='navBar'>
@@ -34,8 +43,6 @@ export const NavBar = () => {
                     <a className='navBar__bar--whats' href="https://api.whatsapp.com/send?phone=523329147808&text=%C2%A1Hola%20N%C3%BAcleo%20Dental!">
                         Enviar whatsapp
                     </a>
-{/*                     <MenuOpen></MenuOpen>
-                    <MenuClose></MenuClose> */}
 
                 </nav>
             </section>

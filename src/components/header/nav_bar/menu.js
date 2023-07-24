@@ -22,12 +22,3 @@ addEventOnElem(navbarLinks, "click", closeNav); */
  * header active
  */
 
-const navBar = document.querySelector("#navBar");
-
-window.addEventListener("scroll", function () {
-  if (window.scrollY >= 100) {
-    navBar.classList.add("navBar--active");
-  } else {
-    navBar.classList.remove("navBar--active");
-  }
-});
