@@ -65,8 +65,8 @@ export const NavBar = () => {
                     </a>
 
                     <div className='navBar__bar--button' id='navBar--button' onClick={handleClick}>
-                        <MenuOpen className={`navBar__bar--button--icon ${Menu ? 'navBar__bar--button--icon--active' : ''}`}></MenuOpen>
-                        <MenuClose className={`navBar__bar--button--icon ${Menu ? '' : 'navBar__bar--button--icon--active'}`}></MenuClose>
+                        <MenuOpen className={`navBar__bar--button--icon ${Menu ? '' : 'navBar__bar--button--icon--active'}`}></MenuOpen>
+                        <MenuClose className={`navBar__bar--button--icon ${Menu ? 'navBar__bar--button--icon--active' : ''}`}></MenuClose>
                     </div>
 
                 </nav>
