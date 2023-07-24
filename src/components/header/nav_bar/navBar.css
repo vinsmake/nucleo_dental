@@ -72,6 +72,10 @@
     background: var(--gradientInv);
 }
 
+.navBar__bar--button--icon {
+    display: none;
+}
+
 @media (max-width: 1366px) {
     .navBar__bar {
         width: 95%;
@@ -108,5 +112,55 @@
     .navBar__bar__links__list--link{
         font-size: 1rem;
         margin: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .navBar {
+        width: 100%;
+        background-color: var(--white);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        box-shadow: var(--navBar);
+    }
+
+    .navBar__bar--logo {
+        font-size: 2rem;
+        margin: auto;
+    }
+    .navBar__bar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navBar__bar__links {
+        display: none;
+    }
+
+    .navBar__bar--whats {
+        display: none;
+    }
+
+    .navBar__bar--button {
+        display: flex;
+        margin: auto;
+        color: var(--black);
+        font-size: 30px;
+        border: 1px solid var(--background);
+        padding: 5px;
+    }
+
+    .navBar__bar--button--icon {
+        width: 2rem;
+        height: 2rem;
+        fill: var(--background);
+        display: none;
+    }
+
+    .navBar__bar--button--icon--active {
+        display: block;
     }
 }

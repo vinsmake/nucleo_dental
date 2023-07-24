@@ -1,22 +1,39 @@
+import { useEffect, useState } from 'react';
 import { MenuClose } from '../../../assets/icons/MenuClose'
 import { MenuOpen } from '../../../assets/icons/MenuOpen'
 import './navBar.css'
 
 export const NavBar = () => {
 
-    const navBar = document.querySelector("#navBar");
+    /* stick menu when scroll */
+    const [navBarActive, setNavBarActive] = useState(false);
 
-    window.addEventListener("scroll", function () {
-      if (window.scrollY >= 100) {
-        navBar.classList.add("navBar--active");
-      } else {
-        navBar.classList.remove("navBar--active");
-      }
-    });
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY >= 100) {
+          setNavBarActive(true);
+        } else {
+          setNavBarActive(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        // Limpia el evento del scroll cuando el componente se desmonte
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
+    /* burguer toggle */
+
+
+
+
 
     return (
         <>
-            <section className='navBar' id='navBar'>
+            <section className={`navBar ${navBarActive ? 'navBar--active' : ''}`} id='navBar'>
                 <nav className='navBar__bar'>
                     <a href='#' className='navBar__bar--logo'>
                         Núcleo Dental
@@ -43,6 +60,11 @@ export const NavBar = () => {
                     <a className='navBar__bar--whats' href="https://api.whatsapp.com/send?phone=523329147808&text=%C2%A1Hola%20N%C3%BAcleo%20Dental!">
                         Enviar whatsapp
                     </a>
+
+                    <div className='navBar__bar--button' id='navBar--button'>
+                        <MenuOpen className={'navBar__bar--button--icon navBar__bar--button--icon--active'}></MenuOpen>
+                        <MenuClose className={'navBar__bar--button--icon'}></MenuClose>
+                    </div>
 
                 </nav>
             </section>
