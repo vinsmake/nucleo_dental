@@ -16,7 +16,7 @@
 }
 
 .navBar__bar--logo {
-    color: var(--background);
+    color: var(--sky);
     font-family: var(--title);
     font-size: 2rem;
     text-align: center;
@@ -45,7 +45,7 @@
 }
 
 .navBar__bar__links__list--link:is(:hover,:focus) {
-    color: var(--lapislazuli);
+    color: var(--sky);
 }
 
 .navBar__bar--whats {
