@@ -2,7 +2,7 @@
 
 .topSocialBar {
     background-color: var(--background);
-    margin: 0 auto 0.5rem auto;
+    margin: auto;
     width: 100%;
 }
 
