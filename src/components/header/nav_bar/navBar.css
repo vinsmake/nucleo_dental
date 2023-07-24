@@ -137,7 +137,32 @@
     }
 
     .navBar__bar__links {
-        display: none;
+        position: fixed;
+        top: 5rem;
+        left: 5%;
+        right: 50%;
+        z-index: 99;
+        width: 90%;
+    }
+
+    .navBar__bar__links__list {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--white);
+        box-shadow: var(--navBar);
+        margin: auto;
+        gap: 0;
+        padding: 0;
+    }
+    .navBar__bar__links__list li {
+        border-bottom: 1px solid var(--backgroundTransparent);
+        padding: 1rem;
+    }
+
+    .navBar__bar__links__list--link {
+        display: flex;
+        width: 100%;
+        font-size: 2rem;
     }
 
     .navBar__bar--whats {
@@ -163,4 +188,6 @@
     .navBar__bar--button--icon--active {
         display: block;
     }
+
+
 }
