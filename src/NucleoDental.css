@@ -3,12 +3,14 @@
     --nucleo: #037588;
 
     --white: #fff;
-    --sky: #1E8CC8;
+    --sky: #0096e7;
     --lapislazuli: #527dfe;
     --royal: #365ed9;
     --background: #0E254E;
     --backgroundTransparent: #0e254e63;
-    --textColor: #5f5f5f;
+    --textColor: #0E254E;
+    --spanColor: #254cc1;
+    --titleColor: #0096e7;
 
     --gradient: linear-gradient(90deg, var(--sky) 0%, var(--royal) 100%);
     --gradientInv: linear-gradient(90deg, var(--royal) 0%, var(--sky) 100%);

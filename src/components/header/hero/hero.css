@@ -19,12 +19,13 @@
 
 .hero__data__info--span {
     font-size: 1.5rem;
-    color: var(--sky);
+    color: var(--spanColor);
     font-family: var(--span);
+    text-transform: uppercase;
 }
 .hero__data__info--title {
     font-size: 2.5rem;
-    color: var(--royal);
+    color: var(--titleColor);
     margin: 0;
     font-family: var(--title);
 }

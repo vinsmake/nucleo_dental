@@ -6,7 +6,7 @@ export const Hero = () => {
             <article className="hero__data">
                 <div className="hero__data__info">
 
-                    <span class="hero__data__info--span">Núcleo Dental</span>
+                    <span class="hero__data__info--span">En Núcleo Dental</span>
 
                     <h2 class="hero__data__info--title">Cuidamos tu sonrisa</h2>
 
