@@ -8,6 +8,7 @@
     --royal: #365ed9;
     --background: #0E254E;
     --backgroundTransparent: #0e254e63;
+    --textColor: #5f5f5f;
 
     --gradient: linear-gradient(90deg, var(--sky) 0%, var(--royal) 100%);
     --gradientInv: linear-gradient(90deg, var(--royal) 0%, var(--sky) 100%);
@@ -15,8 +16,11 @@
 
     /* font-family */
     --social: roboto-regular;
-    --title: poppins-bold;
     --navLink: roboto-bold;
+    --span: poppins-SemiBold;
+    --title: poppins-bold;
+    --text: lato-regular;
+
 
     /* helpers */
     --transition: 0.25s ease;
@@ -32,15 +36,14 @@
     font-family: poppins-bold;
     src: url(./assets/fonts/Poppins/Poppins-Bold.ttf);
 }
-
 @font-face {
-    font-family: lato-bold;
-    src: url(./assets/fonts/Lato/Lato-Bold.ttf);
+    font-family: poppins-SemiBold;
+    src: url(./assets/fonts/Poppins/Poppins-SemiBold.ttf);
 }
 
 @font-face {
-    font-family: lato-regular;
-    src: url(./assets/fonts/Lato/Lato-Regular.ttf);
+    font-family: roboto-bold;
+    src: url(./assets/fonts/Roboto/Roboto-Bold.ttf);
 }
 
 @font-face {
@@ -49,9 +52,10 @@
 }
 
 @font-face {
-    font-family: roboto-bold;
-    src: url(./assets/fonts/Roboto/Roboto-Bold.ttf);
+    font-family: lato-regular;
+    src: url(./assets/fonts/Lato/Lato-Regular.ttf);
 }
+
 
 
 html {

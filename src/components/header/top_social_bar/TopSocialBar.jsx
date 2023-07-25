@@ -7,7 +7,7 @@ import { Telefono } from '../../../assets/icons/Telefono';
 export const TopSocialBar = () => {
     return (
         <>
-            <div className="topSocialBar">
+            <section className="topSocialBar">
                 <div className="topSocialBar__bar">
 
 
@@ -52,7 +52,7 @@ export const TopSocialBar = () => {
                     </ul>
 
                 </div>
-            </div>
+            </section>
         </>
     )
 }
