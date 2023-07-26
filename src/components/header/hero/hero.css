@@ -1,5 +1,6 @@
 .hero {
-
+    width: 100%;
+    margin: auto;
 }
 
 .hero__data {
@@ -65,4 +66,49 @@
     width: 100%;
     height: auto;
     margin: auto;
+}
+
+@media (max-width: 1366px) {
+    .hero__data {
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width: 962px) {
+    .hero__data {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+
+    .hero__data__info--text {
+        text-align: left;
+    }
+
+    .hero__data__info--button {
+        margin: auto;
+    }
+
+    .hero__data__image {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        margin-top: 6rem;
+    }
+
+    .hero__data {
+        width: 95%;
+    }
+
+    .hero__data__info--text {
+        text-align: justify;
+    }
 }
