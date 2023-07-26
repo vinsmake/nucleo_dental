@@ -1,4 +1,5 @@
 import './hero.css'
+import Image from '../hero-banner.png'
 
 export const Hero = () => {
     return (
@@ -21,8 +22,7 @@ export const Hero = () => {
                 </div>
 
                 <div className="hero__data__image">
-
-
+                    <img className='hero__data__image--img' src={Image} alt="dr-logo" />
                 </div>
 
             </article>

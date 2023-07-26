@@ -8,8 +8,8 @@
     grid-template-columns: 1fr 0.75fr;
     align-items: center;
     gap: 1rem;
-    margin: auto;
-    padding: 2rem 1rem;
+    margin: 0 auto;
+    padding: 0rem 1rem;
 }
 
 .hero__data__info {
@@ -53,4 +53,16 @@
 
 .hero__data__info--button:is(:hover, :focus) {
     background: var(--gradientInv);
+}
+
+.hero__data__image {
+    height: auto;
+    width: 100%;
+    margin: auto;
+}
+
+.hero__data__image--img {
+    width: 100%;
+    height: auto;
+    margin: auto;
 }

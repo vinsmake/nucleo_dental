@@ -10,7 +10,7 @@
     --backgroundTransparent: #0e254e63;
     --textColor: #0E254E;
     --spanColor: #254cc1;
-    --titleColor: #0096e7;
+    --titleColor: #0E254E;
 
     --gradient: linear-gradient(90deg, var(--sky) 0%, var(--royal) 100%);
     --gradientInv: linear-gradient(90deg, var(--royal) 0%, var(--sky) 100%);
