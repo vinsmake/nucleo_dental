@@ -25,7 +25,7 @@
 }
 
 .navBar__bar--logo {
-    color: var(--sky);
+    color: var(--titleColor);
     font-family: var(--title);
     font-size: 2rem;
     text-align: center;

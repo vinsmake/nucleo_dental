@@ -111,4 +111,9 @@
     .hero__data__info--text {
         text-align: justify;
     }
+
+    
+    .hero__data__image {
+        width: 90%;
+    }
 }
