@@ -4,8 +4,12 @@
     padding: 1rem;
     border: 1px solid var(--sky);
     border-radius: 8px;
-    margin: auto;
+    margin: 0.5rem auto;
+    height: 10rem;
+}
 
+.service__icon {
+    margin: 0 1rem;
 }
 
 .service__info--title {
@@ -17,4 +21,5 @@
 .service__info--text {
     font-family: var(--text);
     color: var(--textColor);
+    text-align: left;
 }

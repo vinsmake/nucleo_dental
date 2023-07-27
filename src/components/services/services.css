@@ -48,6 +48,10 @@
     grid-template-columns: 1fr;
 }
 
+.services__grid__image--img {
+    margin: auto;
+}
+
 .services__grid__last{
     width: 100%;
     height: auto;
