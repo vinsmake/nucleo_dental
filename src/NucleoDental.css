@@ -30,6 +30,8 @@
     /* shadows */
     --button: 0px 10px 30px #527dfe63;
     --navBar: 0px 5px 18px -1px #0e254e63;
+    --serviceShadowLeft: -10px 0px 10px #527dfe63;
+    --serviceShadowRight: 10px 0px 10px #527dfe63;
 }
 
 

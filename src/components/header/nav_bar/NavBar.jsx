@@ -45,10 +45,10 @@ export const NavBar = () => {
                     <div className={`navBar__bar__links ${Menu ? 'navBar__bar__links--active' : ''}`} id="navBar--links">
                         <ul className='navBar__bar__links__list'>
                             <li>
-                                <a className='navBar__bar__links__list--link' id='navBar--link' href='#inicio'> Inicio </a>
+                                <a className='navBar__bar__links__list--link' id='navBar--link' href='#home'> Inicio </a>
                             </li>
                             <li>
-                                <a className='navBar__bar__links__list--link' id='navBar--link' href='#servicios'> Servicios </a>
+                                <a className='navBar__bar__links__list--link' id='navBar--link' href='#services'> Servicios </a>
 
                             </li>
                             <li>
