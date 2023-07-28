@@ -1,9 +1,9 @@
 export const Specialties = () => {
     return (
     <>
-        <section className="specialties">
+        <section className="specialties" id="specialties">
 
-            
+
         </section>
     </>
     )
