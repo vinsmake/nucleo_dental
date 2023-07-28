@@ -4,7 +4,7 @@
 
 .services {
     text-align: center;
-    margin-top: 3rem;
+    margin: 3rem auto;
 }
 
 .services--span {
@@ -23,8 +23,9 @@
 
 .services__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 2fr 3fr;
     width: 80%;
+    min-width: 60rem;
     margin: auto;
 }
 
@@ -50,6 +51,8 @@
 
 .services__grid__image--img {
     margin: auto;
+    height: auto;
+    width: 100%;
 }
 
 .services__grid__last{
@@ -62,4 +65,29 @@
 
 .services__grid__last .service {
     box-shadow: var(--serviceShadowRight);
+}
+
+@media (max-width: 1366px) {
+    .services__grid {
+        width: 95%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 962px) {
+    .services__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .services__grid__image {
+        grid-area: 1 / 1 / 1 / 3;
+        width: 15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services__grid__last .service {
+        flex-direction: column-reverse;
+    }
 }
