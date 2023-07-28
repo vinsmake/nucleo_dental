@@ -52,7 +52,7 @@ export const NavBar = () => {
 
                             </li>
                             <li>
-                                <a className='navBar__bar__links__list--link' id='navBar--link' href='#tratamientos'> Tratamientos </a>
+                                <a className='navBar__bar__links__list--link' id='navBar--link' href='#specialties'> Especialidades </a>
                             </li>
                             <li>
                                 <a className='navBar__bar__links__list--link' id='navBar--link' href='#nosotros'> Nosotros </a>
