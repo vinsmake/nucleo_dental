@@ -1,6 +1,4 @@
-import './testing.css'
-
-export const Testing = () => {
+export const testing = () => {
     return (
     <>
         <div className="testing"></div>
