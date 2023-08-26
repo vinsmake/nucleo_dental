@@ -1,11 +1,11 @@
 import './speciality.css'
 import image from './img/itero-hand.png'
 
-export const Speciality = () => {
+export const Speciality01 = ({className, background}) => {
     return (
         <>
             <article className="speciality">
-                <div className='speciality__data'>
+                <div className={className}>
 
                     <div className='speciality__data__head'>
                         <span className='speciality__data__head--span'>
@@ -33,7 +33,7 @@ export const Speciality = () => {
                 
                 <div className='speciality__data__image'>
                     <div className='speciality__data__image'>
-                        <img className='speciality__data__image--img' src={image}></img>
+                        <img className={`speciality__data__image--img ${background}`} src={image}></img>
                     </div>
                 </div>
 
