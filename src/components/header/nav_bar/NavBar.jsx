@@ -33,15 +33,15 @@ export const NavBar = () => {
     }
 
 
-    const {navLinks, navBtn} = headerData;
+    const {navLinks, navBtn, navName} = headerData.navData;
 
 
     return (
         <>
             <section className={`navBar ${navBarActive ? 'navBar--active' : ''}`} id='navBar'>
                 <nav className='navBar__bar'>
-                    <a href='#' className='navBar__bar--logo'>
-                        Núcleo Dental
+                    <a href={navName.href} className='navBar__bar--logo'>
+                        {navName.text}
                     </a>
 
                     <div className={`navBar__bar__links ${Menu ? 'navBar__bar__links--active' : ''}`} id="navBar--links">
