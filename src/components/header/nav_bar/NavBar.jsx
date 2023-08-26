@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { MenuClose } from '../../../assets/icons/MenuClose'
 import { MenuOpen } from '../../../assets/icons/MenuOpen'
+import { headerData } from '../../../data.js'
 import './navBar.css'
 
 export const NavBar = () => {
@@ -32,36 +33,31 @@ export const NavBar = () => {
     }
 
 
+    const {navLinks, navBtn, navName} = headerData.navData;
 
 
     return (
         <>
             <section className={`navBar ${navBarActive ? 'navBar--active' : ''}`} id='navBar'>
                 <nav className='navBar__bar'>
-                    <a href='#' className='navBar__bar--logo'>
-                        Núcleo Dental
+                    <a href={navName.href} className='navBar__bar--logo'>
+                        {navName.text}
                     </a>
 
                     <div className={`navBar__bar__links ${Menu ? 'navBar__bar__links--active' : ''}`} id="navBar--links">
                         <ul className='navBar__bar__links__list'>
-                            <li>
-                                <a className='navBar__bar__links__list--link' id='navBar--link' href='#home'> Inicio </a>
-                            </li>
-                            <li>
-                                <a className='navBar__bar__links__list--link' id='navBar--link' href='#services'> Servicios </a>
-
-                            </li>
-                            <li>
-                                <a className='navBar__bar__links__list--link' id='navBar--link' href='#specialties'> Especialidades </a>
-                            </li>
-                            <li>
-                                <a className='navBar__bar__links__list--link' id='navBar--link' href='#nosotros'> Nosotros </a>
-                            </li>
+                            {navLinks.map((link, index) => {
+                                return (
+                                    <li key={index}>
+                                    <a className='navBar__bar__links__list--link' id='navBar--link' href={link.href}> {link.text} </a>
+                                </li>
+                                )
+                            })}
                         </ul>
                     </div>
 
-                    <a className='navBar__bar--whats' href="https://api.whatsapp.com/send?phone=523329147808&text=%C2%A1Hola%20N%C3%BAcleo%20Dental!">
-                        Enviar whatsapp
+                    <a className='navBar__bar--whats' href={navBtn.href}>
+                        {navBtn.text}
                     </a>
 
                     <div className='navBar__bar--button' id='navBar--button' onClick={handleClick}>
