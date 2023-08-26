@@ -3,7 +3,7 @@ import { Facebook } from "../../../assets/icons/Facebook";
 import { Whatsapp } from "../../../assets/icons/Whatsapp";
 import { Instagram } from '../../../assets/icons/Instagram';
 import { Telefono } from '../../../assets/icons/Telefono';
-import { headerData } from '../../../data.js'
+import { headerData } from '../headerData.js'
 
 export const TopSocialBar = () => {
 
