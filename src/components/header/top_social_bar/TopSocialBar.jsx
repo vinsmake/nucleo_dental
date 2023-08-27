@@ -3,8 +3,13 @@ import { Facebook } from "../../../assets/icons/Facebook";
 import { Whatsapp } from "../../../assets/icons/Whatsapp";
 import { Instagram } from '../../../assets/icons/Instagram';
 import { Telefono } from '../../../assets/icons/Telefono';
+import { headerData } from '../headerData.js'
 
 export const TopSocialBar = () => {
+
+    
+    const {facebook, whatsapp, instagram, tel} = headerData.barData;
+
     return (
         <>
             <section className="topSocialBar">
@@ -14,37 +19,37 @@ export const TopSocialBar = () => {
                     <ul className="topSocialBar__bar__contactList">
                         <li className="topSocialBar__bar__contactList--item">
                             <Facebook className={"topSocialBar__bar__contactList--icon"}></Facebook>
-                            <a href="https://www.facebook.com/proatencionmedica">Facebook</a>
+                            <a href={facebook.href}>Facebook</a>
                         </li>
 
                         <li className="topSocialBar__bar__contactList--item">
                             <Whatsapp className={"topSocialBar__bar__contactList--icon"}></Whatsapp>
-                            <a href="https://api.whatsapp.com/send?phone=523329147808&text=%C2%A1Hola%20N%C3%BAcleo%20Dental!">+52 1 33 2914 7808</a>
+                            <a href={whatsapp.href}>{whatsapp.text}</a>
                         </li>
                     </ul>
 
 
                     <ul className="topSocialBar__bar__socialList">
                         <li className='topSocialBar__bar__socialList--item'>
-                            <a href="https://api.whatsapp.com/send?phone=523329147808&text=%C2%A1Hola%20N%C3%BAcleo%20Dental!" className="social-link">
+                            <a href={whatsapp.href} className="social-link">
                             <Whatsapp className={"topSocialBar__bar__socialList--icon"}></Whatsapp>
                             </a>
                         </li>
 
                         <li className='topSocialBar__bar__socialList--item'>
-                            <a href="https://www.facebook.com/proatencionmedica" className="social-link">
+                            <a href={facebook.href} className="social-link">
                             <Facebook className={"topSocialBar__bar__socialList--icon"}></Facebook>
                             </a>
                         </li>
 
                         <li className='topSocialBar__bar__socialList--item'>
-                            <a href="https://www.instagram.com/nucleodental.mzo/" className="social-link">
+                            <a href={instagram.href} className="social-link">
                             <Instagram className={"topSocialBar__bar__socialList--icon"}></Instagram>
                             </a>
                         </li>
 
                         <li className='topSocialBar__bar__socialList--item'>
-                            <a href="tel:3329147808" className="social-link">
+                            <a href={'tel:' + tel.href} className="social-link">
                             <Telefono className={"topSocialBar__bar__socialList--icon"}></Telefono>
                             </a>
                         </li>

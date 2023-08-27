@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { MenuClose } from '../../../assets/icons/MenuClose'
 import { MenuOpen } from '../../../assets/icons/MenuOpen'
-import { headerData } from '../../../data.js'
+import { headerData } from '../headerData.js'
 import './navBar.css'
 
 export const NavBar = () => {
