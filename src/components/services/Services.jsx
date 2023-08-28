@@ -6,6 +6,7 @@ import { Service03 } from './servicesList/Service03'
 import { Service04 } from './servicesList/Service04'
 import { Service05 } from './servicesList/Service05'
 import { Service06 } from './servicesList/Service06'
+import { Service } from './servicesList/Service'
 
 export const Services = () => {
     return (
@@ -16,6 +17,7 @@ export const Services = () => {
 
         <div className='services__grid'>
             <div className='services__grid__first'>
+                <Service/>
                 <Service01/>
                 <Service02/>
                 <Service03/>
