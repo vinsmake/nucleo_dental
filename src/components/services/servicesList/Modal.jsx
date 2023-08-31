@@ -13,7 +13,7 @@ export const Modal = ({ data }) => {
   };
 
   return (
-    <div>
+    <div className='modal__container'>
       <button className='modal-button' onClick={openModal}>+</button>
       {isModalOpen && (
         <div className="modal-overlay" onClick={closeModal}>
@@ -22,7 +22,7 @@ export const Modal = ({ data }) => {
             <div className='modal__head'>
               <img src={data.img} className="modal--icon" />
               <h2 className='modal--title'>{data.title}</h2>
-              <button className="modal-button" onClick={closeModal}>
+              <button className="modal-button--close" onClick={closeModal}>
                 &times;
               </button>
             </div>
