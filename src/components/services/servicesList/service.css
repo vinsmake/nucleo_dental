@@ -17,7 +17,9 @@
     width: auto;
 }
 
-
+.service__info {
+    margin-right: 4px;
+}
 
 .service__info--title {
     font-family: var(--title);
@@ -58,5 +60,13 @@
 
     .service__icon {
         max-width: 64px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service {
+        height: 24rem;
+        justify-content: center;
+        padding: 0.6rem;
     }
 }
