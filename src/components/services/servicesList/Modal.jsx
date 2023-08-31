@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './modal.css'; // Asegúrate de tener este archivo CSS para estilizar el modal
 
-export const Modal = ({data}) => {
+export const Modal = ({ data }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -16,13 +16,19 @@ export const Modal = ({data}) => {
     <div>
       <button className='modal-button' onClick={openModal}>+</button>
       {isModalOpen && (
-        <div className="modal-overlay">
+        <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content">
-            <button className="modal-button" onClick={closeModal}>
-              &times;
-            </button>
-            <h2 className='modal--title'>{data.title}</h2>
+
+            <div className='modal__head'>
+              <img src={data.img} className="modal--icon" />
+              <h2 className='modal--title'>{data.title}</h2>
+              <button className="modal-button" onClick={closeModal}>
+                &times;
+              </button>
+            </div>
+
             <p className='modal--text'>{data.modal}</p>
+
           </div>
         </div>
       )}

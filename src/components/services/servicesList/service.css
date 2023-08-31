@@ -17,7 +17,9 @@
     width: auto;
 }
 
-
+.service__info {
+    margin-right: 4px;
+}
 
 .service__info--title {
     font-family: var(--title);
