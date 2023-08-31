@@ -63,3 +63,9 @@
   height: 4rem;
   margin: auto;
 }
+
+@media (max-width: 480px) {
+  .modal-content {
+    height: 90%;
+  }
+}
