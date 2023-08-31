@@ -26,9 +26,9 @@ export const Modal = ({ data }) => {
                 &times;
               </button>
             </div>
-
+          <div className='modal--text__container'>
             <p className='modal--text'>{data.modal}</p>
-
+          </div>
           </div>
         </div>
       )}

@@ -44,6 +44,7 @@
   width: 100%;
   margin: auto;
   box-shadow: var(--navBar);
+  padding: 0 6px;
 }
 
 .modal--title {
@@ -52,6 +53,10 @@
   font-size: 1.5rem;
 }
 
+.modal--text__container {
+  max-height: 300px;
+  overflow-y: auto;
+}
 .modal--text {
   color: var(--textColor);
   font-family: var(--text);
@@ -66,7 +71,10 @@
 
 @media (max-width: 480px) {
   .modal-content {
-    margin: auto auto 1rem auto;
-    height: 70%;
+    margin: auto;
+  }
+
+  .modal--title {
+    font-size: 1rem;
   }
 }
