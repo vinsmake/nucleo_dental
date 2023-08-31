@@ -66,6 +66,7 @@
 
 @media (max-width: 480px) {
   .modal-content {
-    height: 90%;
+    margin: auto auto 1rem auto;
+    height: 70%;
   }
 }
