@@ -62,3 +62,11 @@
         max-width: 64px;
     }
 }
+
+@media (max-width: 480px) {
+    .service {
+        height: 24rem;
+        justify-content: center;
+        padding: 0.6rem;
+    }
+}
