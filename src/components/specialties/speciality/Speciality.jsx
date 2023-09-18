@@ -16,7 +16,7 @@ export const Speciality = () => {
 
 
                     <article className="speciality" key={index}>
-                        <div className={position}>
+                        <div className={`speciality__data--${position}`}>
 
                             <div className='speciality__data__head'>
                                 <span className='speciality__data__head--span'>

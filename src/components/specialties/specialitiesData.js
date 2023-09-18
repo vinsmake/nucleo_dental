@@ -10,7 +10,7 @@ export const specialitiesData = [
         href: 'https://www.youtube.com/watch?v=gSPlAW44bXQ&amp;ab_channel=iTeroScanner',
         img: {
             src: image1,
-            position: 'speciality__data--left',
+            position: 'left',
             background: 'noBackground'
         }
 
@@ -24,7 +24,7 @@ export const specialitiesData = [
         href: 'https://api.whatsapp.com/send?phone=523329147808&text=%C2%A1Hola%20N%C3%BAcleo%20Dental!',
         img: {
             src: image2,
-            position: 'speciality__data--right',
+            position: 'right',
             background: 'background'
         }
     }
