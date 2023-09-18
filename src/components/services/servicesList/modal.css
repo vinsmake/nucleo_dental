@@ -95,3 +95,8 @@
     margin: auto auto 1rem auto;
   }
 }
+
+/* Estilo para bloquear el desplazamiento del cuerpo */
+.body-no-scroll {
+  overflow: hidden;
+}
