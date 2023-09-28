@@ -31,6 +31,8 @@
     --button: 0px 10px 30px #527dfe63;
     --navBar: 0px 5px 18px -1px #0e254e63;
     --serviceShadow: 0px 0px 15px 5px #527dfe63;
+    --specialityImgShadow: drop-shadow(10px 0px 5px #c9c9c9);
+    --specialityImgBackground: drop-shadow(6px 6px 0px #365ed9);
 }
 
 

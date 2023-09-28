@@ -18,13 +18,16 @@
     color: var(--titleColor);
     margin: 0 0 2rem 0;
     font-family: var(--title);
-
 }
 
 .speciality__data {
     display: flex;
 }
 
+.speciality__data__body--text {
+    font-family: var(--text);
+    color: var(--textColor);
+}
 /* To select only the left and right version of data display */
 .speciality__data.left {
     flex-direction: row;
@@ -34,13 +37,27 @@
 }
 
 
+/* Images */
 .speciality__data__image {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem;
 }
 
+/* To change the background if it has or not background */
 .speciality__data__image--img {
     width: 100%;
+    max-width: 800px;
     height: auto;
+    margin: auto;
+}
+
+.speciality__data__image--img.noBackground {
+    filter: var(--specialityImgShadow)
+}
+
+.speciality__data__image--img.background {
+    filter: var(--specialityImgBackground)
+    
 }

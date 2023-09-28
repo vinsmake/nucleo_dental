@@ -30,6 +30,7 @@ export const Speciality = () => {
                         </div>
 
                         {/* data */}
+                        
                         <div className={`speciality__data ${position}`}>
 
                             {/* body */}
