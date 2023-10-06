@@ -1,24 +1,21 @@
 :root{
 
+    /* COLORS */
     --colorPrimary: #0E254E;
     --colorSecondary: #365ed9;
     --colorSecondaryHelper: #0096e7;
     --colorAccent: #254cc1;
-    --colorNeutral: ;
+    --colorAccentHelper: #527dfe;
+    --colorNeutral: #fff;
     --colorText: #0E254E;
 
-    --nucleo: #037588;
+    /* GRADIENTS */
+    --gradient: linear-gradient(90deg, var(--colorSecondaryHelper) 0%, var(--colorSecondary) 100%);
+    --gradientInv: linear-gradient(90deg, var(--colorSecondary) 0%, var(--colorSecondaryHelper) 100%);
 
-    --white: #fff;
-    --lapislazuli: #527dfe;
-    --background: #0E254E;
-    --backgroundTransparent: #0e254e63;
-    --spanColor: #254cc1;
-    --titleColor: #0E254E;
-
-    --gradient: linear-gradient(90deg, var(--colorSecondary) 0%, var(--colorSecondaryHelper) 100%);
-    --gradientInv: linear-gradient(90deg, var(--colorSecondaryHelper) 0%, var(--colorSecondary) 100%);
-
+    /* shadows */
+    --shadowButton: 10px 10px 30px -10px var(--colorAccent);
+    --shadowBar: 0px 5px 15px -5px var(--colorPrimary);
 
     /* font-family */
     --social: roboto-regular;
@@ -31,12 +28,7 @@
     /* helpers */
     --transition: 0.25s ease;
 
-    /* shadows */
-    --button: 0px 10px 30px #527dfe63;
-    --navBar: 0px 5px 18px -1px #0e254e63;
-    --serviceShadow: 0px 0px 15px 5px #527dfe63;
-    --specialityImgShadow: drop-shadow(10px 0px 5px #c9c9c9);
-    --specialityImgBackground: drop-shadow(6px 6px 0px #365ed9);
+
 }
 
 

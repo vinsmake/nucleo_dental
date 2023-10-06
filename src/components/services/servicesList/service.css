@@ -23,7 +23,7 @@
 
 .service__info--title {
     font-family: var(--title);
-    color: var(--spanColor);
+    color: var(--colorAccent);
     font-size: 1.5rem;
 }
 

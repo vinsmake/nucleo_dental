@@ -9,14 +9,14 @@
 }
 
 .speciality__head--span {
-    color: var(--spanColor);
+    color: var(--colorAccent);
     font-family: var(--span);
     font-size: 1.5rem;
 }
 
 .speciality__head--title {
     font-size: 2.5rem;
-    color: var(--titleColor);
+    color: var(--colorText);
     margin: 0 0 2rem 0;
     font-family: var(--title);
 }
@@ -34,11 +34,11 @@
     margin: 2rem 6rem;
     padding: 1rem 3rem;
     background: var(--gradient);
-    color: var(--white);
+    color: var(--colorNeutral);
     text-transform: uppercase;
     font-family: var(--social);
     border-radius: 4px;
-    box-shadow: var(--button);
+    box-shadow: var(--shadowButton);
     text-align: center;
     /* Centrar horizontalmente */
     display: flex;
@@ -87,11 +87,11 @@
 }
 
 .speciality__data__image--img.noBackground {
-    filter: var(--specialityImgShadow)
+    filter: drop-shadow(10px 0px 5px #c9c9c9);
 }
 
 .speciality__data__image--img.background {
-    filter: var(--specialityImgBackground)
+    filter: drop-shadow(6px 6px 0px var(--colorSecondary));
     
 }
 

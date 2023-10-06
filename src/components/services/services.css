@@ -9,14 +9,14 @@
 
 .services--span {
     font-size: 1.5rem;
-    color: var(--spanColor);
+    color: var(--colorAccent);
     font-family: var(--span);
     text-transform: uppercase;
 }
 
 .services--title {
     font-size: 2.5rem;
-    color: var(--titleColor);
+    color: var(--colorText);
     margin: 0 0 2rem 0;
     font-family: var(--title);
 }
@@ -35,7 +35,7 @@
 }
 
 .services__grid__services .service {
-    box-shadow: var(--serviceShadow);
+    box-shadow: 5px 5px 30px -10px var(--colorShadow);
     background-color: rgba(255, 255, 255, 0.85);
 }
 
