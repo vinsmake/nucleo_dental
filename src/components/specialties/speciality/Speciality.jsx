@@ -35,8 +35,7 @@ export const Speciality = () => {
 
                             {/* body */}
                             <section>
-
-                                <div className='speciality__data__body'>
+                                
                                     <p className='speciality__data__body--text'>
                                         {speciality.text1}
                                     </p>
@@ -44,7 +43,6 @@ export const Speciality = () => {
                                         {speciality.text2}
                                     </p>
                                     <a className='speciality__data__body--button' href={speciality.href}>{speciality.btn}</a>
-                                </div>
 
                             </section>
 
