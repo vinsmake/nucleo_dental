@@ -16,39 +16,43 @@ export const Speciality = () => {
 
 
                     <article className="speciality" key={index}>
-                        <div className={position}>
 
-                            <div className='speciality__data__head'>
-                                <span className='speciality__data__head--span'>
-                                    {speciality.span}
-                                </span>
+                        {/* head */}
+                        <div className='speciality__head'>
 
-                                <h2 className='speciality__data__head--title'>
-                                    {speciality.title}
-                                </h2>
-                            </div>
+                            <span className='speciality__head--span'>
+                                {speciality.span}
+                            </span>
 
-                            <div className='speciality__data__body'>
-                                <p className='speciality__data__body--text'>
-                                    {speciality.text1}
-                                </p>
-                                <p className='speciality__data__body--text'>
-                                    {speciality.text2}
-                                </p>
+                            <h2 className='speciality__head--title'>
+                                {speciality.title}
+                            </h2>
+                        </div>
 
+                        {/* data */}
+                        
+                        <div className={`speciality__data ${position}`}>
 
+                            {/* body */}
+                            <section>
+                                
+                                    <p className='speciality__data__body--text'>
+                                        {speciality.text1}
+                                    </p>
+                                    <p className='speciality__data__body--text'>
+                                        {speciality.text2}
+                                    </p>
+                                    <a className='speciality__data__body--button' href={speciality.href}>{speciality.btn}</a>
 
-                                <a className='speciality__data__body--button' href={speciality.href}>Conoce iTero</a>
-                            </div>
+                            </section>
 
-
-                            <div className='speciality__data__image'>
-                                <div className='speciality__data__image'>
-                                    <img className={`speciality__data__image--img ${background}`} src={src}></img>
-                                </div>
-                            </div>
+                            {/* image */}
+                            <section className='speciality__data__image'>
+                                <img className={`speciality__data__image--img ${background}`} src={src}></img>
+                            </section>
 
                         </div>
+
                     </article>
                 )
             })}

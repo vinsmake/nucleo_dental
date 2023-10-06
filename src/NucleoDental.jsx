@@ -10,7 +10,7 @@ export const NucleoDental = () => {
   <>
   <Header/>
   <Services/>
-{/*   <Specialties/> */}
+  <Specialties/>
   </>
   )
 }
