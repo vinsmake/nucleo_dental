@@ -27,7 +27,7 @@
 
 .speciality__data__body--text {
     font-family: var(--text);
-    color: var(--textColor);
+    color: var(--colorText);
 }
 
 .speciality__data__body--button {

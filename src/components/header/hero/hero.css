@@ -33,7 +33,7 @@
 
 .hero__data__info--text {
     font-size: 1rem;
-    color: var(--textColor);
+    color: var(--colorText);
     margin: 1rem 0;
     font-family: var(--text);
 }

@@ -1,19 +1,23 @@
 :root{
 
+    --colorPrimary: #0E254E;
+    --colorSecondary: #365ed9;
+    --colorSecondaryHelper: #0096e7;
+    --colorAccent: #254cc1;
+    --colorNeutral: ;
+    --colorText: #0E254E;
+
     --nucleo: #037588;
 
     --white: #fff;
-    --sky: #0096e7;
     --lapislazuli: #527dfe;
-    --royal: #365ed9;
     --background: #0E254E;
     --backgroundTransparent: #0e254e63;
-    --textColor: #0E254E;
     --spanColor: #254cc1;
     --titleColor: #0E254E;
 
-    --gradient: linear-gradient(90deg, var(--sky) 0%, var(--royal) 100%);
-    --gradientInv: linear-gradient(90deg, var(--royal) 0%, var(--sky) 100%);
+    --gradient: linear-gradient(90deg, var(--colorSecondary) 0%, var(--colorSecondaryHelper) 100%);
+    --gradientInv: linear-gradient(90deg, var(--colorSecondaryHelper) 0%, var(--colorSecondary) 100%);
 
 
     /* font-family */

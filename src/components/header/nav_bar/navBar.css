@@ -54,7 +54,7 @@
 }
 
 .navBar__bar__links__list--link:is(:hover,:focus) {
-    color: var(--sky);
+    color: var(--colorAccent);
 }
 
 .navBar__bar--whats {
