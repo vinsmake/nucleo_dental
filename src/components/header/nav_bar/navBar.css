@@ -26,7 +26,7 @@
 
 .navBar__bar--logo {
     color: var(--colorPrimary);
-    font-family: var(--title);
+    font-family: var(--fontTitle);
     font-size: 2rem;
     text-align: center;
 }
@@ -48,7 +48,8 @@
 .navBar__bar__links__list--link{
     color: var(--colorPrimary);
     transition: var(--transition);
-    font-family: var(--navLink);
+    font-family: var(--fontNavigation);
+    font-weight: bold;
     font-size: 1rem;
     margin: auto 1rem auto auto;
 }
@@ -62,7 +63,7 @@
     background: var(--gradient);
     color: var(--colorNeutral);
     text-transform: uppercase;
-    font-family: var(--social);
+    font-family: var(--fontButton);
     border-radius: 4px;
     box-shadow: var(--shadowButton);
     text-align: center;

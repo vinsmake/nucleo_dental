@@ -10,7 +10,7 @@
 
 .speciality__head--span {
     color: var(--colorAccent);
-    font-family: var(--span);
+    font-family: var(--fontTitle);
     font-size: 1.5rem;
 }
 
@@ -18,7 +18,7 @@
     font-size: 2.5rem;
     color: var(--colorText);
     margin: 0 0 2rem 0;
-    font-family: var(--title);
+    font-family: var(--fontTitle);
 }
 
 .speciality__data {
@@ -26,7 +26,7 @@
 }
 
 .speciality__data__body--text {
-    font-family: var(--text);
+    font-family: var(--fontText);
     color: var(--colorText);
 }
 
@@ -36,7 +36,7 @@
     background: var(--gradient);
     color: var(--colorNeutral);
     text-transform: uppercase;
-    font-family: var(--social);
+    font-family: var(--fontNavigation);
     border-radius: 4px;
     box-shadow: var(--shadowButton);
     text-align: center;

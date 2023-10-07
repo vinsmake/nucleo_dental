@@ -13,21 +13,19 @@
     --gradient: linear-gradient(90deg, var(--colorSecondaryHelper) 0%, var(--colorSecondary) 100%);
     --gradientInv: linear-gradient(90deg, var(--colorSecondary) 0%, var(--colorSecondaryHelper) 100%);
 
-    /* shadows */
+    /* BOX-SHADOW */
     --shadowButton: 10px 10px 30px -10px var(--colorAccent);
     --shadowBar: 0px 5px 15px -5px var(--colorPrimary);
-
-    /* font-family */
-    --social: roboto-regular;
-    --navLink: roboto-bold;
-    --span: poppins-SemiBold;
-    --title: poppins-bold;
-    --text: lato-regular;
-
 
     /* helpers */
     --transition: 0.25s ease;
 
+    /* font-family */
+    --fontNavigation: roboto-regular;
+    --fontButton: roboto-regular;
+    --fontSubtitle: poppins-SemiBold;
+    --fontTitle: poppins-bold;
+    --fontText: lato-regular;
 
 }
 

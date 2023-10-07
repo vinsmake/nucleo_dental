@@ -18,21 +18,21 @@
 .hero__data__info--span {
     font-size: 1.5rem;
     color: var(--colorAccent);
-    font-family: var(--span);
+    font-family: var(--fontSubtitle);
     text-transform: uppercase;
 }
 .hero__data__info--title {
     font-size: 2.5rem;
     color: var(--colorText);
     margin: 0;
-    font-family: var(--title);
+    font-family: var(--fontTitle);
 }
 
 .hero__data__info--text {
     font-size: 1rem;
     color: var(--colorText);
     margin: 1rem 0;
-    font-family: var(--text);
+    font-family: var(--fontText);
 }
 
 .hero__data__info--button {
@@ -40,7 +40,7 @@
     background: var(--gradient);
     color: var(--colorNeutral);
     text-transform: uppercase;
-    font-family: var(--social);
+    font-family: var(--fontButton);
     border-radius: 4px;
     box-shadow: var(--shadowButton);
     text-align: center;

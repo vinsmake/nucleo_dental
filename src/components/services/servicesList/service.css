@@ -22,13 +22,13 @@
 }
 
 .service__info--title {
-    font-family: var(--title);
+    font-family: var(--fontTitle);
     color: var(--colorAccent);
     font-size: 1.5rem;
 }
 
 .service__info--text {
-    font-family: var(--text);
+    font-family: var(--fontText);
     color: var(--colorText);
     text-align: left;
 }

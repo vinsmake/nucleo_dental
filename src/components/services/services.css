@@ -10,7 +10,7 @@
 .services--span {
     font-size: 1.5rem;
     color: var(--colorAccent);
-    font-family: var(--span);
+    font-family: var(--fontSubtitle);
     text-transform: uppercase;
 }
 
@@ -18,7 +18,7 @@
     font-size: 2.5rem;
     color: var(--colorText);
     margin: 0 0 2rem 0;
-    font-family: var(--title);
+    font-family: var(--fontTitle);
 }
 
 .services__grid {
