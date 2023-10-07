@@ -1,4 +1,5 @@
 import { Speciality } from "./speciality/Speciality"
+import './specialties.css'
 
 export const Specialties = () => {
     return (

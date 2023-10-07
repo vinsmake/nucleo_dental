@@ -1,7 +1,7 @@
 
 
 .topSocialBar {
-    background-color: var(--background);
+    background-color: var(--colorPrimary);
     margin: auto;
     width: 100%;
 }
@@ -27,20 +27,20 @@
 
 }
 .topSocialBar__bar__contactList--item a {
-    color: var(--white);
-    font-family: var(--social);
+    color: var(--colorNeutral);
+    font-family: var(--fontNavigation);
     font-size: 1rem;
     transition: var(--transition);
 }
 
 .topSocialBar__bar__contactList--item a:is(:hover, :focus) {
-    color: var(--lapislazuli);
+    color: var(--colorAccentHelper);
 }
 
 .topSocialBar__bar__contactList--icon {
     height: 1rem;
     width: auto;
-    fill: var(--lapislazuli);
+    fill: var(--colorAccentHelper);
 
 }
 
@@ -61,14 +61,14 @@
 .topSocialBar__bar__socialList--icon {
     height: 1rem;
     width: auto;
-    fill: var(--white);
-    stroke: var(--white);
+    fill: var(--colorNeutral);
+    stroke: var(--colorNeutral);
     transition: var(--transition);
 }
 
 .topSocialBar__bar__socialList--icon:is(:hover, :focus) {
-    fill: var(--lapislazuli);
-    stroke: var(--lapislazuli);
+    fill: var(--colorAccentHelper);
+    stroke: var(--colorAccentHelper);
 }
 @media (max-width: 1366px) {
 

@@ -13,39 +13,36 @@
     padding: 0rem 1rem;
 }
 
-.hero__data__info {
-
-}
 
 
 .hero__data__info--span {
     font-size: 1.5rem;
-    color: var(--spanColor);
-    font-family: var(--span);
+    color: var(--colorAccent);
+    font-family: var(--fontSubtitle);
     text-transform: uppercase;
 }
 .hero__data__info--title {
     font-size: 2.5rem;
-    color: var(--titleColor);
+    color: var(--colorText);
     margin: 0;
-    font-family: var(--title);
+    font-family: var(--fontTitle);
 }
 
 .hero__data__info--text {
     font-size: 1rem;
-    color: var(--textColor);
+    color: var(--colorText);
     margin: 1rem 0;
-    font-family: var(--text);
+    font-family: var(--fontText);
 }
 
 .hero__data__info--button {
     display: block;
     background: var(--gradient);
-    color: var(--white);
+    color: var(--colorNeutral);
     text-transform: uppercase;
-    font-family: var(--social);
+    font-family: var(--fontButton);
     border-radius: 4px;
-    box-shadow: var(--button);
+    box-shadow: var(--shadowButton);
     text-align: center;
     padding: 1rem;
     margin: 2rem 0;

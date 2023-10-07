@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     padding: 1rem;
-    border: 1px solid var(--sky);
+    border: 1px solid var(--colorAccent);
     border-radius: 8px;
     margin: 0.5rem auto;
     height: 10rem;
@@ -22,14 +22,14 @@
 }
 
 .service__info--title {
-    font-family: var(--title);
-    color: var(--spanColor);
+    font-family: var(--fontTitle);
+    color: var(--colorAccent);
     font-size: 1.5rem;
 }
 
 .service__info--text {
-    font-family: var(--text);
-    color: var(--textColor);
+    font-family: var(--fontText);
+    color: var(--colorText);
     text-align: left;
 }
 
