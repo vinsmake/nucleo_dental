@@ -32,6 +32,10 @@ export const NavBar = () => {
         setMenu(!Menu);
     }
 
+    const closeMenu = () => {
+        setMenu(false); // Esta función cerrará el menú
+      };
+
 
     const {navLinks, navBtn, navName} = headerData.navData;
 
@@ -49,7 +53,7 @@ export const NavBar = () => {
                             {navLinks.map((link, index) => {
                                 return (
                                     <li key={index}>
-                                    <a className='navBar__bar__links__list--link' id='navBar--link' href={link.href}> {link.text} </a>
+                                    <a onClick={closeMenu}  className='navBar__bar__links__list--link' id='navBar--link' href={link.href}> {link.text} </a>
                                 </li>
                                 )
                             })}
