@@ -27,6 +27,9 @@
     --fontTitle: poppins-bold;
     --fontText: lato-regular;
 
+    /* font-size */
+    --sizeOne: 1rem;
+    --sizeTwo: 2rem;
 }
 
 
