@@ -1,0 +1,40 @@
+.map {
+    width: 80%;
+    margin: auto;
+}
+
+.map__data {
+text-align: center;
+}
+
+.map__data--span {
+    color: var(--colorAccent);
+    font-family: var(--fontTitle);
+    font-size: 1.5rem;
+}
+
+.map__data--title {
+    font-size: 2.5rem;
+    color: var(--colorText);
+    margin: 0 0 2rem 0;
+    font-family: var(--fontTitle);
+}
+
+.map__data--text {
+    font-family: var(--fontText);
+    color: var(--colorText);
+}
+
+.map__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 2rem auto;
+    gap: 1rem;
+}
+
+.map__frame--frame {
+    width: 100%;
+    height: 20rem;
+    border: 5px outset var(--colorAccent);
+}
