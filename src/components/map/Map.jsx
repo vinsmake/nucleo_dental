@@ -3,7 +3,7 @@ import { mapData } from './mapData.js'
 
 export const Map = () => {
 
-    const {map, span, title, data} = mapData;
+    const {map, span, title, text, data} = mapData;
 
     return (
         <>
@@ -11,6 +11,7 @@ export const Map = () => {
                 <article className='map__data'>
                     <span className='map__data--span'>{span}</span>
                     <h1 className='map__data--title'>{title}</h1>
+                    <p className='map__data--text'>{text}</p>
                 </article>
 
                 <section className='map__container'>
@@ -22,7 +23,7 @@ export const Map = () => {
 
 
                     <article className="map__data__data">
-                    <p className='map__data__data--text'>{data.text}</p>
+
                     </article>
 
                 </section>

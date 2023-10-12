@@ -16,7 +16,7 @@ text-align: center;
 .map__data--title {
     font-size: 2.5rem;
     color: var(--colorText);
-    margin: 0 0 2rem 0;
+    margin: 0;
     font-family: var(--fontTitle);
 }
 
