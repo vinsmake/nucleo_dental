@@ -1,46 +1,61 @@
 import './carousel.css'
 
-import React, { useState, useCallback } from 'react';
+const state = {};
+const carouselList = document.querySelector('.carousel__list');
+const carouselItems = document.querySelectorAll('.carousel__item');
+const elems = Array.from(carouselItems);
+
+carouselList.addEventListener('click', function (event) {
+  var newActive = event.target;
+  var isItem = newActive.closest('.carousel__item');
+
+  if (!isItem || newActive.classList.contains('carousel__item_active')) {
+    return;
+  };
+  
+  update(newActive);
+});
+
+const update = function(newActive) {
+  const newActivePos = newActive.dataset.pos;
+
+  const current = elems.find((elem) => elem.dataset.pos == 0);
+  const prev = elems.find((elem) => elem.dataset.pos == -1);
+  const next = elems.find((elem) => elem.dataset.pos == 1);
+  const first = elems.find((elem) => elem.dataset.pos == -2);
+  const last = elems.find((elem) => elem.dataset.pos == 2);
+  
+  current.classList.remove('carousel__item_active');
+  
+  [current, prev, next, first, last].forEach(item => {
+    var itemPos = item.dataset.pos;
+
+    item.dataset.pos = getPos(itemPos, newActivePos)
+  });
+};
+
+const getPos = function (current, active) {
+  const diff = current - active;
+
+  if (Math.abs(current - active) > 2) {
+    return -current
+  }
+
+  return diff;
+}
 
 export const Carousel = () => {
-    const [activePos, setActivePos] = useState(0);
-
-    const carouselItems = [
-        { pos: -2, text: '1' },
-        { pos: -1, text: '2' },
-        { pos: 0, text: '3' },
-        { pos: 1, text: '4' },
-        { pos: 2, text: '5' },
-    ];
-
-    const update = useCallback((newActivePos) => {
-        setActivePos(newActivePos);
-    }, []);
-
-    const getPos = (current, active) => {
-        const diff = current - active;
-
-        if (Math.abs(current - active) > 2) {
-            return -current;
-        }
-
-        return diff;
-    };
-
     return (
-        <div className="carousel">
-            <ul className="carousel__list">
-                {carouselItems.map((item) => (
-                    <li
-                        key={item.pos}
-                        className={`carousel__item ${item.pos === activePos ? 'carousel__item_active' : ''}`}
-                        data-pos={item.pos}
-                        onClick={() => update(item.pos)}
-                    >
-                        {item.text}
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
-};
+        <>
+            <div class="carousel">
+                <ul class="carousel__list">
+                    <li class="carousel__item" data-pos="-2">1</li>
+                    <li class="carousel__item" data-pos="-1">2</li>
+                    <li class="carousel__item" data-pos="0">3</li>
+                    <li class="carousel__item" data-pos="1">4</li>
+                    <li class="carousel__item" data-pos="2">5</li>
+                </ul>
+            </div>
+        </>
+    )
+}
