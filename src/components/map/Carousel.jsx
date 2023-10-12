@@ -5,10 +5,10 @@ import xd3 from './xd3.jpg'
 
 
 
-export const carousel = () => {
+export const Carousel = () => {
     return (
     <>
-        
+        xd
     </>
     )
 }
