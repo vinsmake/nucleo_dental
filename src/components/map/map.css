@@ -38,3 +38,8 @@ text-align: center;
     height: 20rem;
     border: 5px outset var(--colorAccent);
 }
+
+.map__data__data {
+    width: 100%;
+    height: 100%;
+}

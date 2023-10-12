@@ -26,11 +26,14 @@ export const Map = () => {
                     <article className="map__data__data">
                     <Carousel/>
                     </article>
+                    
 
                 </section>
 
 
+                
             </section>
+
         </>
     )
 }
