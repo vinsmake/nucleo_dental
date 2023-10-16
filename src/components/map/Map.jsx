@@ -2,6 +2,7 @@ import { Carousel } from './carousel';
 import './map.css'
 import { mapData } from './mapData.js'
 
+
 export const Map = () => {
 
     const {map, span, title, text, data} = mapData;
