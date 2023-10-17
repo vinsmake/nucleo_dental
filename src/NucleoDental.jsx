@@ -5,6 +5,7 @@ import { Services } from "./components/services/Services";
 import { Specialties } from "./components/specialties/Specialties";
 import { Banner } from "./components/banner/Banner";
 import { Map } from "./components/map/map";
+import { Footer } from "./components/footer/Footer";
 
 
 export const NucleoDental = () => {
@@ -15,6 +16,7 @@ export const NucleoDental = () => {
   <Specialties/>
   <Map/>
   <Banner/>
+  <Footer/>
   </>
   )
 }
