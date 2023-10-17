@@ -12,7 +12,7 @@
 .carousel__image__main--src {
     overflow: hidden;
     object-fit: cover;
-    height: 12rem;
+    height: 15rem;
     width: 100%;
     border: 2px outset var(--colorAccent);
 }
@@ -35,7 +35,7 @@
 .carousel__image__select--option--src {
     overflow: hidden;
     object-fit: cover;
-    height: 6rem;
+    height: 5rem;
     width: 100%;
     border: 2px outset var(--colorAccent);
     
