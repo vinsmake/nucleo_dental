@@ -51,3 +51,16 @@ text-align: center;
     display: flex;
     margin: auto;
 }
+
+@media (max-width: 1366px) {
+    .map {
+        width: 95%;
+    }
+}
+
+@media (max-width: 962px) {
+    .map__container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

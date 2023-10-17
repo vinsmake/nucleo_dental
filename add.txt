@@ -1,9 +1,3 @@
 Add efect to the navBar close
 
-fix on mobile, doesn't shows the complete page.
-
-Add auto font size root variable modify with mediaquery
-
-add map
-
-https://codepen.io/dobladov/pen/ZOqOoa
+add footer
