@@ -14,7 +14,7 @@
     object-fit: cover;
     height: 12rem;
     width: 100%;
-    border: 5px outset var(--colorAccent);
+    border: 2px outset var(--colorAccent);
 }
 
 .carousel__image__main--src--none {
@@ -37,6 +37,6 @@
     object-fit: cover;
     height: 6rem;
     width: 100%;
-    border: 5px outset var(--colorAccent);
+    border: 2px outset var(--colorAccent);
     
 }
