@@ -1,11 +1,11 @@
-import xd from './xd.jpg'
-import xd2 from './xd2.jpg'
-import xd3 from './xd3.jpg'
+import image0 from './image0.png'
+import image1 from './image1.png'
+import image2 from './image2.png'
 
 export const carouselData = {
     images: [
-        {href: xd},
-        {href: xd2},
-        {href: xd3}
+        {href: image0},
+        {href: image1},
+        {href: image2}
     ]
 }
