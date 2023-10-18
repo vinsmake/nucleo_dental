@@ -1,13 +1,22 @@
 .footer {
     width: 100%;
-    margin: auto;
+    margin: 0 auto 0 auto;
     background-color: var(--colorPrimary);
+}
+
+.footer--copyright {
+    font-size: 1rem;
+    font-family: var(--fontText);
+    color: var(--colorNeutral);
+    margin: 0;
+    text-align: center;
+    background-color: var(--colorSecondary);
 }
 
 .footer__grid {
     width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 5fr;
     margin: auto;
     gap: 1rem;
     padding: 2rem 0rem 1rem 0rem;

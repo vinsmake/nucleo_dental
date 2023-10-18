@@ -31,6 +31,8 @@ export const Footer = () => {
                     </article>
 
                 </section>
+
+                <p className="footer--copyright">Todos los derechos reservados &copy; 2023 Núcleo Dental</p>
             </footer>
         </>
     )
