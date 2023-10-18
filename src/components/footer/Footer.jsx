@@ -3,7 +3,7 @@ import './footer.css'
 
 export const Footer = () => {
 
-    const { title, span, leyend, info } = footerData;
+    const { title, span, leyend, href, info } = footerData;
 
     return (
         <>
@@ -12,7 +12,7 @@ export const Footer = () => {
                     <article className="footer__grid__section">
                         <h2 className="footer__grid__section--title">{title}</h2>
                         <p className="footer__grid__section--span">{span}</p>
-                        <a href={leyend} className="footer__grid__section--text">{leyend}</a>
+                        <a href={href} className="footer__grid__section--text">{leyend}</a>
                     </article>
 
                     <article className="footer__grid__section">

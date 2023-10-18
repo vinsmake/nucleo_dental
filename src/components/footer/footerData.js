@@ -7,6 +7,7 @@ export const footerData = {
     title: 'Núcleo Dental',
     span: 'Cuidamos tu sonrisa',
     leyend: 'www.nucleodental.com.mx',
+    href: '#home',
     info: [
         {
             href: 'https://maps.app.goo.gl/fxmGv8H8MAKw3zx26',
