@@ -1,1 +1,2 @@
-Add efect to the navBar close
+Agregar api a mapa.
+
