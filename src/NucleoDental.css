@@ -104,7 +104,7 @@ html {
   }
   
   html::-webkit-scrollbar {
-    width: 1rem;
+    width: 0.6rem;
   }
   
   html::-webkit-scrollbar-track {
@@ -112,14 +112,14 @@ html {
   }
   
   html::-webkit-scrollbar-thumb {
-    background: var(--colorPrimary); /* Corregido el valor de fondo, se quita la letra 'r' */
+    background: var(--colorPrimary);
     border-radius: 8px;
-    border: 3px solid var(--colorPrimaryHelper);
+    border: 2px solid var(--colorPrimaryHelper);
   }
   
   @media (max-width: 480px) {
     html::-webkit-scrollbar {
-      width: 0; /* Se cambia el valor a '0' en lugar de '0rem' */
+      width: 0; 
     }
   }
   
