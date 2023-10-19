@@ -2,11 +2,13 @@
 
     /* COLORS */
     --colorPrimary: #0E254E;
+    --colorPrimaryHelper: #124596;
     --colorSecondary: #365ed9;
     --colorSecondaryHelper: #0096e7;
     --colorAccent: #254cc1;
     --colorAccentHelper: #527dfe;
     --colorNeutral: #fff;
+    --colorNeutralHelper: #F9F9F9;
     --colorText: #0E254E;
 
     /* GRADIENTS */
@@ -92,3 +94,32 @@ body {
 a {
     text-decoration: none;
 }
+
+/* SCROLL CSS */
+
+html {
+    /* this makes the link move you to the exact place */
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+  
+  html::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: var(--colorNeutral);
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: var(--colorPrimary); /* Corregido el valor de fondo, se quita la letra 'r' */
+    border-radius: 8px;
+    border: 3px solid var(--colorPrimaryHelper);
+  }
+  
+  @media (max-width: 480px) {
+    html::-webkit-scrollbar {
+      width: 0; /* Se cambia el valor a '0' en lugar de '0rem' */
+    }
+  }
+  
